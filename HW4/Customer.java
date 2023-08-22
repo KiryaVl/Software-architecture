@@ -36,6 +36,15 @@ public class Customer {
         return false;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", tickets=" + tickets +
+                ", cash=" + cash +
+                '}';
+    }
+
     public List<Ticket> search(LocalDateTime date, long rootNumber) {
         // Логика поиска билетов
         return new ArrayList<>(); // Вернуть список найденных билетов

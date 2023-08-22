@@ -54,6 +54,7 @@ package HW4;
 //@enduml
 
 import java.time.LocalDateTime;
+
 class Ticket {
     private long rootNumber;
     private double price;
@@ -83,6 +84,17 @@ class Ticket {
 
     public LocalDateTime getDate() {
         return date;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "rootNumber=" + rootNumber +
+                ", price=" + price +
+                ", place=" + place +
+                ", date=" + date +
+                ", isValid=" + isValid +
+                '}';
     }
 
     public boolean isValid() {

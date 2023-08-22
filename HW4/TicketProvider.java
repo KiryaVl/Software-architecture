@@ -19,7 +19,7 @@ public class TicketProvider {
     }
 
     public List<Ticket> getTicket(long rootNumber) {
-        // Логика получения билетов по номеру маршрута
+        // Логика получения билетов по номеру
         return new ArrayList<>(); // Вернуть список найденных билетов
     }
 
